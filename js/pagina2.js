@@ -21,7 +21,7 @@ const LONGITUD_MAXIMA_NOMBRE = 100;
 // Ejemplo:  const URL_DEL_WORKER = 'https://webd-notificar.mi-usuario.workers.dev';
 // NO escribas aquí el token de Telegram ni el CHAT_ID.
 // ============================================================================
-const URL_DEL_WORKER = 'https://qfranz-notificador.workers.dev';
+const URL_DEL_WORKER = 'https://qfranz-notificador.qfranz-notificador.workers.dev';
 
 let estallidos = [];
 let marco = 0;
