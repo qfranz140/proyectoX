@@ -6,6 +6,7 @@ const campoNombre = document.getElementById('campoNombre');
 const botonEntrar = document.getElementById('botonEntrar');
 const mensajeError = document.getElementById('mensajeError');
 const mensajeBienvenida = document.getElementById('mensajeBienvenida');
+const botonContinuar = document.getElementById('botonContinuar');
 
 const COLORES_AMBIENTALES = [
   '#ff3b30', '#ff9500', '#ffd60a', '#ff2d55',
@@ -194,6 +195,7 @@ function mostrarBienvenida(nombre) {
   mensajeBienvenida.textContent = '¡Bienvenido, ' + nombre + '!';
   mensajeBienvenida.classList.remove('oculto');
   envolverLetras(mensajeBienvenida);
+  botonContinuar.classList.remove('oculto');
   crearEstallidoFestivo();
 }
 
@@ -225,6 +227,10 @@ formulario.addEventListener('submit', async (evento) => {
     botonEntrar.disabled = false;
     botonEntrar.textContent = 'Entrar';
   }
+});
+
+botonContinuar.addEventListener('click', () => {
+  window.location.href = 'pagina3.html';
 });
 
 iniciar();
