@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/pagina2.css">
+</head>
+<body>
+  <canvas id="lienzo"></canvas>
+  <main class="contenedor contenedorFormulario">
+    <h1 id="tituloPagina" class="caida">INTRODUCE TU NOMBRE</h1>
+    <form id="formulario" class="aparicion" novalidate>
+      <label id="etiquetaNombre" for="campoNombre">¿Cómo te llamas?</label>
+      <input id="campoNombre" type="text" name="nombre" placeholder="Escribe tu nombre" maxlength="100" autocomplete="name" autofocus>
+      <button id="botonEntrar" type="submit">Entrar</button>
+      <p id="mensajeError" class="oculto"></p>
+    </form>
+    <h2 id="mensajeBienvenida" class="caida oculto"></h2>
+  </main>
+  <script src="../js/pagina2.js"></script>
+</body>
+</html>
